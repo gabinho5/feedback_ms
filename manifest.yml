@@ -1,0 +1,12 @@
+---
+applications:
+- name: swaggerpetstorefeedbackmicroservice
+  memory: 1024M
+  host: swaggerpetstorefeedbackmicroservice_10
+  domain: mybluemix.net
+  buildpack: java_buildpack
+  path: target/swaggerpetstorefeedbackmicroservice-0.1-SNAPSHOT.jar
+  env:
+   PROFILE: bluemix
+   CONFIG_SERVER_URI: ${configServerUri}
+  timeout: 360
